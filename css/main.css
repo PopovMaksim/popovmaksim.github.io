@@ -94,6 +94,12 @@ h5 {
   }
 }
 
+@media screen and (max-width: 550px) {
+  .home-page {
+    grid-template-rows: 25% 75%;
+  }
+}
+
 .home-header {
   grid-area: header;
   display: grid;
@@ -120,6 +126,12 @@ h5 {
   letter-spacing: .5em;
   text-transform: uppercase;
   -webkit-box-reflect: above 0 -webkit-gradient(linear, left bottom, left top, from(transparent), color-stop(0.35, transparent), to(rgba(0, 0, 0, 0.25)));
+}
+
+@media screen and (max-width: 550px) {
+  .home-header .home-page-heading {
+    margin: 0;
+  }
 }
 
 @media screen and (min-width: 700px) {
@@ -232,6 +244,9 @@ h5 {
 }
 
 @media screen and (max-width: 550px) {
+  .navigation ul li {
+    margin: 0.7em;
+  }
   .navigation ul li a {
     font-size: 1.2rem;
   }
